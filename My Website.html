@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!-- saved from url=(0034)http://127.0.0.1:5500/Website.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+  <head>
     <title> HTML </title>
-    <link rel="icon" type="img/gif" href="./My Website_files/html.png">
-    <link href="./My Website_files/style.css" rel="stylesheet">
+    <link rel="icon" type="img/gif" href="Images/html.png">
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
     <h1 id="h1"><div id="circle" style="background-color: black; color: aliceblue;">This is my First Website!</div></h1>
@@ -11,7 +11,7 @@
     <h3> 12/18/23 </h3>
 <hr>
 <a href="https://www.nationalgeographic.com/animals/mammals/facts/domestic-dog" target="_blank">
-  <img id="dog" src="./My Website_files/funnydog.gif" title="Cutest Doggy Everrr" height="200px">
+  <img id="dog" src="Images/funnydog.gif" title="Cutest Doggy Everrr" height="200px">
 </a>
     <p> This is Normal Text</p>
     <p> This is <b>Bold</b> Text</p>
@@ -23,13 +23,13 @@
     <p> This is <sub>Subscript</sub> Text</p>
     <p> This is <sup>Superscript</sup> Text </p>
     <p> This is <tt>Monospaced</tt> Text </p>
-    <p> This is <mark style="background-color: rgb(152, 214, 255);">Highlited/Marked</mark> Text 
+    <p> This is <mark style="background-color: rgb(152, 214, 255);">Highlited/Marked</mark> Text </pxw>
     <br>
-    </p><hr>
-    <!--THIS IS A COMMENT-->
-    <a href="https://www.youtube.com/" target="_blank" title="Youtube">Youtube</a>
     <hr>
-    <a href="http://127.0.0.1:5500/Lyrics.html" target="_blank" title="Juice World: Lucid Dreams">Song Lyrics: Lucid Dreams by Juice World</a>
+    <!--THIS IS A COMMENT-->
+    <a href="https://www.youtube.com" target="_blank" title ="Youtube">Youtube</a>
+    <hr>
+    <a href="Lyrics.html" target="_blank" title="Juice World: Lucid Dreams">Song Lyrics: Lucid Dreams by Juice World</a>
     <hr>
     <a href="mailto:kiahncutlip@gmail.com" title="Contact Me">Email Me</a>
     <hr>
@@ -47,8 +47,8 @@
     </ol>
 
     <h3> My Store Hours </h3>
-    <table border="2px" style="background-color: black;"> 
-      <tbody><tr align="center" style="background-color: rgb(127, 206, 255);">
+    <table> 
+      <tr align="center";>
         <th width="100px">Sunday</th>
         <th>Monday</th>
         <th>Tuesday</th>
@@ -57,8 +57,8 @@
         <th>Friday</th>
         <th>Saturday</th>
       </tr>
-    <tr align="center" style="background-color: aliceblue;">
-      <td style="background-color: lightcoral;">Closed</td>
+    <tr align="center"></tr>
+      <td id="closed" align="center">Closed</td>
       <td>8:00AM-5:00PM</td>
       <td>8:00AM-5:00PM</td>
       <td>8:00AM-5:00PM</td>
@@ -66,21 +66,21 @@
       <td>8:00AM-5:00PM</td>
       <td>10:00AM-3:00PM</td>
     </tr>
-    </tbody></table>
+    </table>
 <br>
     <a href="https://www.shitexpress.com/" target="_blank">
         <button style="font-size: large; background-color: bisque; border-radius: 5px; border-color: black;">CLICK ME!</button>
     </a>
 <br>
 <hr>
-    <form action="http://127.0.0.1:5500/index.php" method="post"> 
+    <form action="index.php" method="post"> 
       
-      <label for="Username">Username:<input type="text" required=""></label><br>
-      <label>Password:<input type="password" required=""></label>
+      <label for="Username">Username:<input type="text" required></label><br>
+      <label>Password:<input type="password" required></label>
       <input type="submit">
     </form>
     <br><hr>
-    <video controls="" height="300px" muted="">
+    <video controls height="300px" muted>
       <source src="Videos/LearnHTMLin4mins.mp4" type="video/mp4">
     </video> <br><hr>
    <label id="label" for="Drop"> Select Payment Type: </label>
@@ -97,10 +97,10 @@
     <div id="box"> </div>
 
   <br><hr><br>
-    <img src="./My Website_files/html.png" height="150px" id="img1">
+    <img src="Images/html.png" height="150px" id="img1">
    
-    <p> </p><h1>HTML</h1> (HyperText Markup Language) is the code that is used to structure a web page and its content. 
-    For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables. <p></p>
+    <p> <h1>HTML</h1> (HyperText Markup Language) is the code that is used to structure a web page and its content. 
+    For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables. </p>
 <br><br><br><hr>
     <div class="box">
       <h2 class="h2"> This is Box #1 </h2>
@@ -110,43 +110,43 @@
       <h2 class="h2"> This is Box #2 </h2>
       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatum totam laboriosam expedita architecto, eaque non veritatis soluta, rem cum quia! Nobis repudiandae assumenda incidunt tempore ad laborum corrupti modi.</p>
     </div>
-  <!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
+  </body>
 
-</body></html>
+  <div id="container"> 
+    <p> Sentence #1 </p>
+    <p> Sentence #2 </p>
+    <p> Sentence #3 </p>
+    <div>
+      <p> Sentence #4</p>
+    </div>
+  </div>
+<br><hr><br>
+  <a href="https://google.com" target="_blank">
+    Google
+  </a>
+
+  <br><br><hr><br>
+
+  <h1 id="h11"> Bob the Builder </h1>
+  
+  <p id="p"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus nesciunt officiis id vel quis dolorum labore expedita, provident excepturi non at ratione ut vitae voluptatem esse deleniti eligendi ipsa? Debitis!</p>
+
+  <ul id="vegetables">
+    <li id="Eggplant"> Eggplant </li>
+    <li id="Spinach"> Spinach </li>
+    <li id="Pumpkin"> Pumpkin </li>
+  </ul>
+
+  <br><br>
+<a href="#" class="icon"><i 
+  class="fa-brands
+  fa-google-g"></i></a>
+  
+  <div align="center" id="LoginBox">
+    <h1> Login Page </h1>
+    <br> <br> <label for="input"> Username: </label><input type="text"  id="input" required><br><br>
+    <label for="password"> Password: </label><input type="password" id="password" required>
+<br><br><br>
+    <button type="submit"> Log In </button>
+  </div>
+</html>
